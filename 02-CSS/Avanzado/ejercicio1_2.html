@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio 1.2 - Especificidad</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <style>
+    </style>
   </head>
   <body>
     <div class="ejercicio-block">
@@ -28,7 +30,7 @@
             <th>Elementos</th>
             <th>Especificidad Total</th>
           </tr>
-          <tr>
+          <tr data-usuario="isc gdl m happy">
             <td>Elemento</td>
             <td><span class="codigo-inline">p</span></td>
             <td>0</td>
@@ -97,42 +99,42 @@
             </tr>
             <tr>
               <td><span class="codigo-inline">p</span></td>
-              <td></td>
-              <td></td>
+              <td>(0,0,1)</td>
+              <td>0 IDS + 0 Clases + 1 Elemento</td>
             </tr>
             <tr>
               <td><span class="codigo-inline">.container</span></td>
-              <td></td>
+              <td>(0,1,0)</td>
               <td></td>
             </tr>
             <tr>
               <td><span class="codigo-inline">#main</span></td>
-              <td></td>
+              <td>(1,0,0)</td>
               <td></td>
             </tr>
             <tr>
               <td><span class="codigo-inline">div.box</span></td>
-              <td></td>
+              <td>(0,1,1)</td>
               <td></td>
             </tr>
             <tr>
               <td><span class="codigo-inline">#header .title</span></td>
-              <td></td>
+              <td>(1,1,0)</td>
               <td></td>
             </tr>
             <tr>
               <td><span class="codigo-inline">.red.bold</span></td>
-              <td></td>
+              <td>(0,2,0)</td>
               <td></td>
             </tr>
             <tr>
               <td><span class="codigo-inline">#menu li a</span></td>
-              <td></td>
+              <td>(1,0,2)</td>
               <td></td>
             </tr>
             <tr>
               <td><span class="codigo-inline">body > p.intro</span></td>
-              <td></td>
+              <td>(0,1,2)</td>
               <td></td>
             </tr>
           </table>
